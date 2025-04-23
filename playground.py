@@ -23,10 +23,10 @@
 
 class Car:
     def __init__(self, **kwargs):
-        self.make = kwargs["make"]
-        self.model = kwargs["model"]
+        self.make = kwargs.get("make")
+        self.model = kwargs.get("model")
 
 
-myCar = Car(make = "Nissan", model = "GT-7")
+myCar = Car(make = "Nissan",)
 print(myCar.model)
         
